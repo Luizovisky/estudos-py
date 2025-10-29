@@ -55,3 +55,11 @@ with open("arquivo.txt", "w") as arquivo:
 with open("arquivo.txt", "r") as arquivo:
     conteudo = arquivo.read()
     print(conteudo)
+
+# --------- Bibliotecas e Módulos -------------
+# Importando módulos
+import math
+
+# Usar uma função do módulo MATH
+raiz = math.sqrt(16)
+print(raiz)
