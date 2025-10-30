@@ -63,3 +63,12 @@ import math
 # Usar uma função do módulo MATH
 raiz = math.sqrt(16)
 print(raiz)
+
+# ----------Criando e Usando Módulos -------------
+
+# Usar o módulo
+import meu_modulo
+
+mensagem = meu_modulo.saudacao3("Carlos")
+print(mensagem)
+
