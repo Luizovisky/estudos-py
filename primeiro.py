@@ -82,3 +82,10 @@ class Pessoa:
 
     def apresentar(self):
         return f"Olá, meu nome é {self.nome} e tenho {self.idade} anos."
+
+# -----------Criar e usar um objeto------------
+# Criar um objeto de classe Pessoa
+pessoa1 = Pessoa("João", 25)
+
+# Usar o método do objeto
+print(pessoa1.apresentar())
