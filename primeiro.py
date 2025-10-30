@@ -65,10 +65,20 @@ raiz = math.sqrt(16)
 print(raiz)
 
 # ----------Criando e Usando Módulos -------------
-
 # Usar o módulo
 import meu_modulo
 
 mensagem = meu_modulo.saudacao3("Carlos")
 print(mensagem)
 
+# ---------------------POO------------------------
+# ---------Classes e Objetos------------
+
+# Definição de uma classe:
+class Pessoa:
+    def __init__(self, nome, idade):
+        self.nome = nome
+        self.idade = idade
+
+    def apresentar(self):
+        return f"Olá, meu nome é {self.nome} e tenho {self.idade} anos."
