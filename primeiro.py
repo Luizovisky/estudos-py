@@ -89,3 +89,27 @@ pessoa1 = Pessoa("João", 25)
 
 # Usar o método do objeto
 print(pessoa1.apresentar())
+
+# ---------- Exceções e Erros ----------------
+# Tratamento de exceções
+
+# Capturar Exceções:
+try:
+    resultado = 10/0
+except ZeroDivisionError:
+    print("Não é possível dividir por zero.")
+
+# ----------- Exceções Personalziadas --------------
+# Definir e usar exceções personalizadas
+class ErroPersonalizado(Exception):
+    def __init__(self, mensagem):
+        super().__init__(mensagem)
+    
+def verificar_idade(idade):
+    if idade < 0:
+        raise ErroPersonalizado("A idade não pode ser negativa.")
+    
+try:
+    verificar_idade(-5)
+except ErroPersonalizado as e:
+    print(e)
