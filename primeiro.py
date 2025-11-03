@@ -85,7 +85,7 @@ class Pessoa:
 
 # -----------Criar e usar um objeto------------
 # Criar um objeto de classe Pessoa
-pessoa1 = Pessoa("João", 25)
+pessoa1 = Pessoa("João", -1)
 
 # Usar o método do objeto
 print(pessoa1.apresentar())
@@ -110,6 +110,31 @@ def verificar_idade(idade):
         raise ErroPersonalizado("A idade não pode ser negativa.")
     
 try:
-    verificar_idade(-5)
+    verificar_idade(-5) 
 except ErroPersonalizado as e:
     print(e)
+
+# ------------ Manipulação de Dados --------------------
+# Listas e Dicionários
+
+# Criar uma lista
+frutas = ["maçã", "banana", "laranja"]
+
+# Adicionar um item à lista
+frutas.append("uva")
+
+# Acessar um item da lista
+print(frutas[1]) # Imprime "banana"
+
+# Dicionários
+# Criar um dicionário
+aluno = {
+    "nome": "Pedro",
+    "idade": 20
+}
+
+# Adicionar um item ao dicionário
+aluno["curso"] = "Python"
+
+# Acessar um item do dicionário
+print(aluno["nome"]) # Imprime "Pedro"
