@@ -138,3 +138,12 @@ aluno["curso"] = "Python"
 
 # Acessar um item do dicionário
 print(aluno["nome"]) # Imprime "Pedro"
+
+# ---------- Trabalhando com Bibliotecas Externas ------------
+# Instalando Bibliotecas com Pip
+
+# Usar a Biblioteca Requests
+import requests
+
+resposta = requests.get("https://api.github.com")
+print(resposta.status.code)
