@@ -143,7 +143,24 @@ print(aluno["nome"]) # Imprime "Pedro"
 # Instalando Bibliotecas com Pip
 
 # Usar a Biblioteca Requests
-import requests
+# ♣ import requests
 
-resposta = requests.get("https://api.github.com")
-print(resposta.status.code)
+# ♣ resposta = requests.get("https://api.github.com")
+# ♣ print(resposta.status.code)  
+
+# ---------------- Conceitos Avançados ------------------
+# Decoradores
+
+# Uso de decoradores
+def decorador(funcao):
+    def wrapper():
+        print("Antes da função")
+        funcao()
+        print("Depois da função")
+    return wrapper
+
+@decorador
+def ola():
+    print("Olá, Mundo!")
+
+ola()
